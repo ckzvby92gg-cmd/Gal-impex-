@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-brand-light text-brand-dark;
+}
+
+.section-title {
+  @apply text-2xl font-semibold text-brand-dark md:text-3xl;
+}
+
+.section-subtitle {
+  @apply text-sm font-semibold uppercase tracking-widest text-brand-green;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full bg-brand-red/10 px-3 py-1 text-xs font-semibold text-brand-red;
+}
